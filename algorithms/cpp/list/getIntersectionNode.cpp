@@ -1,8 +1,9 @@
 // Source : https://leetcode.cn/problems/intersection-of-two-linked-lists/
 // Author : guoshuai wei
 // Date   : 2023-03-31
+// 160
 
-#include "node.cpp"
+#include "node.h"
 #include <unordered_set>
 using namespace std;
 
