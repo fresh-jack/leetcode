@@ -17,7 +17,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix) {
         for (int i = left; i <= right; i++) {
             result.push_back(matrix[top][i]);
         }
-        for (int i = top; i <= bottom; i++) {
+        for (int i = top+1; i <= bottom; i++) {
             result.push_back(matrix[i][right]);
         }
         if (left < right && top < bottom) {
@@ -28,6 +28,10 @@ vector<int> spiralOrder(vector<vector<int>> &matrix) {
                 result.push_back(matrix[i][left]);
             }
         }
+        left++;
+        right--;
+        top++;
+        bottom--;
     }
     return result;
 }

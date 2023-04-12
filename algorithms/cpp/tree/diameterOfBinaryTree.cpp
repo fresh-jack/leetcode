@@ -12,8 +12,7 @@ int diameterOfBinaryTree(TreeNode* root) {
     int result = 0;
     function<int(TreeNode *)> depth = [&](TreeNode *root) -> int
     {
-        if (root == nullptr)
-        {
+        if (root == nullptr) {
             return 0;
         }
         int L = depth(root->left);
